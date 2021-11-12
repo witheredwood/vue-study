@@ -59,7 +59,7 @@ localName: this.name
         watch: {
             // 监控变量 childName 的改变
             childName: function () {
-                console.log('chileName 的值改变了，改变之后的值：', this.childName)
+                console.log('childName：', this.childName)
             },
         }
     }
@@ -219,19 +219,19 @@ watch: {
 在上面父组件的代码中，包含了对变量的监控。相关代码如下：
 
 ```js
-watch: {
-    childName2: function () {
-        console.log('childName2：', this.childName2)
-    },
+watch: {    
+    childName2: function () {       
+        console.log('childName2：', this.childName2)    
+    }
 }
 ```
 
 父组件监控了变量 `childName2` 的值，一旦 `childName2` 的值变化，会在浏览器终端输出提示信息。运行程序后，打开浏览器终端，可以看到 `childName2` 的值改变了。
 
-
+------
 
 完整的代码地址：
 
-https://github.com/witheredwood/vue-study
+[https://github.com/witheredwood/vue-study](https://github.com/witheredwood/vue-study)
 
 下载项目后在项目终端中输入命令：`npm run serve` 启动项目
